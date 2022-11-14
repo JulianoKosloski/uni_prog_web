@@ -79,7 +79,8 @@ ol, ul {
 
 body {
     display: flex;
-    align-items: column;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--clr-white);
     color: var(--clr-rich-black-fogra-39);
     padding: 0 0 0 0;
@@ -118,43 +119,51 @@ a:hover {
     color: var(--clr-sonic-silver);
 }
 
-/* temporary, copied from Felipe's formulario.css */
-ul {
-    list-style-type: none;
-    margin: 20;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--clr-white);
-    border: solid var(--clr-rich-black-fogra-39);
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: var(--clr-rich-black-fogra-39);
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-   
-  }
-  
-  li a:hover {
-    background-color: var(--clr-white);
-  }
-
-  #formulario{
-    background-color: var(--clr-white);
-    margin: 0 auto;
-    width: 600px;
-    padding: 1em;
-    border: solid var(--clr-rich-black-fogra-39);
-    border-radius: 1em;
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-  /* -------end of Felipe's css-------- */
+.home-content {
+    width: 100%;
+    text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-items {
+    display: flex;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    flex-direction: row;
+    float: left;
+}
+
+#logo-title {
+    padding: 1rem 0 0 0;
+    font-family: var(--ff-title);
+    color: var(--clr-dark-red);
+}
+
+#logo-box {
+    height: 50px;
+    width: 50px;
+}
 
 /*--------------------------------------------------NAVBAR---------------------------------------------------- */
 

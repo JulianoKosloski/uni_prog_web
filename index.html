@@ -12,22 +12,28 @@
 <!-----------------------inserir fontes e outros metadados aqui------------------------>
 </head> 
 <body>
-    <nav id="barraNav">
-        <ul>
-            <li><a href="html/alterarCadastro.html cadastro.html">Alterar cadastro</a></li>
-            <li><a href="html/emprestimos.html">Meus Emprestimos</a></li>
-            <li><a href="html/login.html">Sair</a></li>
-          </ul>
-      </nav>
+    <div class="wrapper">
+        <nav class="main-nav" id="barraNav">
+            <ul class="logo">
+                <li><a href="index.html"><img id="logo-box" src="images/favicon.ico"></a></li>
+                <li id="logo-title">Empresta já!</li>
+            </ul>
+            <ul class="nav-items">
+                <li><a href="html/alterarCadastro.html">Alterar cadastro</a></li>
+                <li><a href="html/listarEmprestimos.html">Meus Emprestimos</a></li>
+                <li><a href="html/login.html">Sair</a></li>
+            </ul>
+        </nav>
 
-<div id="formulario">
-
-<h3>Home</h3>
-<p>Bem vindo ao site de Emprestimos de itens </p>
-<p>Para emprestar um item seu click no botao abaixo!</p>
-<a href="html/cadastrarItem.html"><button>Cadastrar novo item</button></a>
-<p>Para pegar um item emprestadoum click no botao abaixo!</p>
-<a href="html/emprestar.html"><button>Emprestar</button></a>
-</div>
+        <div class="home-content" id="formulario">
+            <h3>Home</h3>
+            <p>Bem vindo ao site de Emprestimos de itens </p>
+            <p>Para emprestar um item seu click no botao abaixo!</p>
+            <a href="html/cadastrarItem.html"><button>Cadastrar novo item</button></a>
+            <p>Para pegar um item emprestado click no botao abaixo!</p>
+            <a href="html/emprestarItem.html"><button>Emprestar</button></a>
+        </div>
 </body>
+    </div>
+        
 </html>
