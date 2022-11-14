@@ -1,4 +1,4 @@
-/*-----------------------------------------------GLOBAL VARIABLES---------------------------------------------------- */
+/*---------------------------------------------GLOBAL VARIABLES-------------------------------------------------- */
 
 @font-face {
     font-family: 'Roboto', sans-serif;
@@ -38,7 +38,7 @@
     --clr-white: white;
 }
 
-/*----------------------------------------------------RESET------------------------------------------------------- */
+/*--------------------------------------------------RESET----------------------------------------------------- */
 
 /* 
 based on https://meyerweb.com/eric/tools/css/reset/ 
@@ -75,7 +75,7 @@ ol, ul {
     list-style: none;
 }
 
-/*-------------------------------------BASIC STYLING--------------------------------------- */
+/*--------------------------------------------------BASIC STYLING---------------------------------------------------- */
 
 body {
     background-color: var(--clr-white);
@@ -107,9 +107,51 @@ a {
     font-weight: var(--fw-semibold);
 }
 
+a:visited {
+    color: var(--clr-rich-black-fogra-39);
+}
+
 a:hover {
     cursor: pointer;
     color: var(--clr-sonic-silver);
 }
 
-/*-------------------------------------NAVBAR--------------------------------------- */
+/* temporary, copied from Felipe's formulario.css */
+ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--clr-white);
+    border: solid var(--clr-rich-black-fogra-39);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--clr-rich-black-fogra-39);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+  }
+  
+  li a:hover {
+    background-color: var(--clr-white);
+  }
+
+  #formulario{
+    background-color: var(--clr-white);
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: solid var(--clr-rich-black-fogra-39);
+    border-radius: 1em;
+}
+
+  /* -------end of Felipe's css-------- */
+
+/*--------------------------------------------------NAVBAR---------------------------------------------------- */
