@@ -78,6 +78,8 @@ ol, ul {
 /*--------------------------------------------------BASIC STYLING---------------------------------------------------- */
 
 body {
+    display: flex;
+    align-items: column;
     background-color: var(--clr-white);
     color: var(--clr-rich-black-fogra-39);
     padding: 0 0 0 0;
@@ -108,7 +110,7 @@ a {
 }
 
 a:visited {
-    color: var(--clr-rich-black-fogra-39);
+    color: inherit;
 }
 
 a:hover {
@@ -155,3 +157,14 @@ ul {
   /* -------end of Felipe's css-------- */
 
 /*--------------------------------------------------NAVBAR---------------------------------------------------- */
+
+
+
+/*--------------------------------------------------TODO: ADD SCREEN RESPONSIVE STYLING---------------------------------------------------- */
+
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    /* from small phone screens to tablets/iPads */
+
+    /* change navbar, dropdown etc */
+}
