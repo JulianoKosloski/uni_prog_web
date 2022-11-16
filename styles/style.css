@@ -36,7 +36,6 @@
     --clr-russian-violet: #0e103dff;
 
     --clr-dutch-white-faded: rgba(232, 218, 178, 0.589);
-
     --clr-white: white;
 }
 
@@ -122,6 +121,7 @@ li a:hover {
 
 a {
     font-weight: var(--fw-semibold);
+    color: var(--clr-rich-black-fogra-39);
 }
 
 a:visited {
@@ -137,12 +137,18 @@ a:hover {
     outline: var(--clr-dark-red) dotted 1px;
 }
 
-
 .wrapper {
     display: flex;
     width: 100%;
     gap: 2rem;
     flex-direction: column;
+}
+
+.box-container {
+    border: 1px solid var(--clr-dutch-white);
+    border-radius: 10px;
+    margin: 2rem 0 0 0;
+    padding: 1rem;
 }
 
 .home-content {
