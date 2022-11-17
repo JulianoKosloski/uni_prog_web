@@ -12,43 +12,58 @@
 <!-----------------------inserir fontes e outros metadados aqui------------------------>
 </head> 
 <body>
+    <div class="wrapper">
+        <nav class="main-nav" id="barraNav">
+            <ul class="logo">
+                <li><a href="index.html"><img id="logo-box" src="../images/favicon.ico"></a></li>
+                <li id="logo-title">Empresta já!</li>
+            </ul>
+            <ul class="nav-items">
+                <li><a href="alterarCadastro.html">Alterar cadastro</a></li>
+                <li><a href="listarEmprestimos.html">Meus empréstimos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="box-container" id="formulario">
 
-<div class="box-container" id="formulario">
+            <form action="#" method="post" name="formulario_cadastro">
+                <h3>Edite seu cadastro:</h3>
+        
+                <p>Nome Atual:</p>
+                <p>Informe seu novo nome:
+                <input  type="text" name="newnome" placeholder="Digite seu novo nome">
+                </p>
+                <p>CPF Atual:</p>
+                <p>Informe novo CPF:
+                <input  type="text" name="newcpf" placeholder="Digite outro CPF">
+                </p>
+                <p>Login Atual:</p>
+                <p>Informe seu novo login:
+                <input  type="text" name="newlogin" placeholder="Digite seu novo Login">
+                </p>
+                <p>Email Atual:</p>
+                <p>Informe seu novo email:
+                <input type="email" name="newemail" placeholder="Digite seu novo e-mail">
+                </p>
+                <p>Informe sua senha atual: 
+                <input type="password" name="senha" placeholder="Digite sua senha atual">
+                </p>
+                <p>Informe sua nova senha : 
+                <input type="password" name="newsenha" placeholder="Digite sua nova senha">
+                </p>
+                <p>Confirme sua nova senha : 
+                <input type="password" name="newsenha1" placeholder="Confirme sua nova senha">
+                </p>
+        
+                <p><input type="submit" value="Alterar"> <!--check what to do with this input later-->
+                </p>
+                <a  class="main-btn" href="../index.html">Voltar</a>
+            </form>
+        </div>
 
-    <form action="#" method="post" name="formulario_cadastro">
-        <h3>Edite seu cadastro aqui</h3>
+    </div>
 
-        <p>Nome Atual:</p>
-        <p>Informe seu novo nome:
-        <input  type="text" name="newnome" placeholder="Digite seu novo nome">
-        </p>
-        <p>CPF Atual:</p>
-        <p>Informe novo CPF:
-        <input  type="text" name="newcpf" placeholder="Digite outro CPF">
-        </p>
-        <p>Login Atual:</p>
-        <p>Informe seu novo login:
-        <input  type="text" name="newlogin" placeholder="Digite seu novo Login">
-        </p>
-        <p>Email Atual:</p>
-        <p>Informe seu novo email:
-        <input type="email" name="newemail" placeholder="Digite seu novo e-mail">
-        </p>
-        <p>Informe sua senha atual: 
-        <input type="password" name="senha" placeholder="Digite sua senha atual">
-        </p>
-        <p>Informe sua nova senha : 
-        <input type="password" name="newsenha" placeholder="Digite sua nova senha">
-        </p>
-        <p>Confirme sua nova senha : 
-        <input type="password" name="newsenha1" placeholder="Confirme sua nova senha">
-        </p>
-
-        <p><input type="submit" value="Alterar"> <!--check what to do with this input later-->
-        </p>
-        <a  class="main-btn" href="../index.html">Voltar</a>
-    </form>
-</div>
 <!------------------------------Footer----------------------------------> 
    
 <footer>

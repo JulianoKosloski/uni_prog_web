@@ -14,23 +14,36 @@
   
 <body> 
   
- <!--------------------inserir conteúdo principal aqui---------------------->
- <div class="box-container" id="formulario">
+    <div class="wrapper">
+        <nav class="main-nav" id="barraNav">
+            <ul class="logo">
+                <li><a href="index.html"><img id="logo-box" src="../images/favicon.ico"></a></li>
+                <li id="logo-title">Empresta já!</li>
+            </ul>
+            <ul class="nav-items">
+                <li><a href="alterarCadastro.html">Alterar cadastro</a></li>
+                <li><a href="listarEmprestimos.html">Meus empréstimos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="box-container" id="formulario">
 
-    <form action="#" method="post" name="formulario">
-    <h3>Faça seu login para emprestar e cadastrar itens:</h3>
-    <p>Login:
-    <input  type="text" name="login" placeholder="Digite seu Login"></p>
-     
-    <p>Senha: <input type="password" name="senha" placeholder="Digite sua senha"></p>
-    
-    <p><input type="submit" value=" Entrar">
-    </p>  
-    
-    <a  class="main-btn" href="cadastrarUsuario.html">Cadastro</a>
-    
-    </form>
-</div>
+            <form action="#" method="post" name="formulario">
+            <h3>Faça seu login para emprestar e cadastrar itens:</h3>
+            <p>Login:
+            <input  type="text" name="login" placeholder="Digite seu Login"></p>
+            
+            <p>Senha: <input type="password" name="senha" placeholder="Digite sua senha"></p>
+            
+            <p><input type="submit" value=" Entrar">
+            </p>  
+            
+            <a  class="main-btn" href="cadastrarUsuario.html">Cadastro</a>
+            </form>
+        </div>
+
+    </div>
    
    
 <!------------------------------Footer----------------------------------> 

@@ -115,6 +115,13 @@ h3 {
     color: var(--clr-dark-red);
 }
 
+p {
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-regular-accent);
+    color: var(--clr-rich-black-fogra-39);
+    padding: 1rem;
+}
+
 li a:hover {
     color: var(--clr-rich-black-fogra-39);
 }
@@ -142,33 +149,56 @@ a:hover {
     width: 100%;
     gap: 2rem;
     flex-direction: column;
+    align-items: center;
 }
 
 .box-container {
-    border: 1px solid var(--clr-dutch-white);
     border-radius: 10px;
     margin: 2rem 0 0 0;
     padding: 1rem;
+    text-align: center;
 }
 
 .home-content {
     border-radius: 10px;
-    width: 100%;
+    width: 500px;
     text-align: center;
 }
+
+.main-btn, .main-btn:visited {
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: var(--clr-dutch-white);
+    color: var(--clr-russian-violet);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-regular);
+    text-align: center;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: var(--clr-russian-violet);
+    color: var(--clr-dutch-white);
+    transform: scale(1.1);
+}
+
+
+
+/* CHECK THIS OUT FOR BUTTOMS https://css-tricks.com/overriding-default-button-styles/ */
+
+/*--------------------------------------------------NAVBAR---------------------------------------------------- */
 
 .main-nav {
     display: flex;
     margin: 0.5rem 0 0 0;
-    border-radius: 10px;
     flex-direction: row;
     gap: 2rem;
     width: 100%;
 }
 
-/* CHECK THIS OUT FOR BUTTOMS https://css-tricks.com/overriding-default-button-styles/ */
-
-/*--------------------------------------------------NAVBAR---------------------------------------------------- */
 .nav-items {
     display: flex;
     padding: 0.5rem 0.5rem 0 0.5rem;
