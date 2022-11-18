@@ -35,6 +35,7 @@
     --clr-rich-black-fogra-39: #080708ff;
     --clr-russian-violet: #0e103dff;
 
+    --clr-sonic-silver-light: rgb(235, 236, 243);
     --clr-dutch-white-faded: rgba(232, 218, 178, 0.589);
     --clr-white: white;
 }
@@ -89,7 +90,7 @@ body {
     overflow-x: hidden;
     background-color: var(--clr-white);
     color: var(--clr-rich-black-fogra-39);
-    padding: 0 0 0 0;
+    padding: 0 0.5rem 0.5rem 0.5rem;
     font-family: var(--ff-main);
     font-weight: var(--fw-regular);
     font-size: var(--fs-regular);
@@ -119,7 +120,7 @@ p {
     font-weight: var(--fw-regular);
     font-size: var(--fs-regular-accent);
     color: var(--clr-rich-black-fogra-39);
-    padding: 1rem;
+    padding: 0.3rem;
 }
 
 li a:hover {
@@ -196,6 +197,8 @@ a:hover {
     margin: 0.5rem 0 0 0;
     flex-direction: row;
     gap: 2rem;
+    background-color: var(--clr-sonic-silver-light);
+    border-radius: 10px;
     width: 100%;
 }
 
