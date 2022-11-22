@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresta já! - Login</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico" alt="ícone do site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +16,14 @@
     <div class="wrapper">
         <nav class="main-nav" id="barraNav">
             <ul class="logo">
-                <li><a href="../index.html"><img id="logo-box" src="../images/favicon.ico"></a></li>
+                <li><a href="index.php"><img id="logo-box" src="images/favicon.ico"></a></li>
                 <li id="logo-title">Empresta já!</li>
             </ul>
             <ul class="nav-items">
-                <li><a href="alterarCadastro.html">Alterar cadastro</a></li>
-                <li><a href="listarEmprestimos.html">Meus empréstimos</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="pages/home.php">Home</a></li>
+                <li><a href="pages/alterarCadastro.html">Alterar cadastro</a></li>
+                <li><a href="pages/listarEmprestimos.html">Meus empréstimos</a></li>
+                <li><a href="index.php">Login</a></li>
             </ul>
         </nav>
         
@@ -37,7 +38,7 @@
             
             <input class="input-btn" type="submit" value=" Entrar"> 
             
-            <a  class="main-btn" href="cadastrarUsuario.html">Cadastro</a>
+            <a  class="main-btn" href="pages/cadastrarUsuario.php">Cadastro</a>
             </form>
         </div>
     </div>
