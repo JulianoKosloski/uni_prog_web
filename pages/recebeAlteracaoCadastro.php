@@ -8,9 +8,4 @@
     echo "newsenha:" . $_POST['newsenha'] . "<br>";
     echo "newsenha1:" . $_POST['newsenha1'] . "<br>";
 
-
-    
-
-
-
 ?>

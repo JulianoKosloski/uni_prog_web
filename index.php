@@ -16,7 +16,7 @@
     <div class="wrapper">
         <nav class="main-nav" id="barraNav">
             <ul class="logo">
-                <li><a href="index.php"><img id="logo-box" src="images/favicon.ico"></a></li>
+                <li><a href="pages/home.php"><img id="logo-box" src="images/favicon.ico"></a></li>
                 <li id="logo-title">Empresta já!</li>
             </ul>
             <ul class="nav-items">
