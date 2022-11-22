@@ -12,7 +12,6 @@
 </head> 
   
 <body> 
-  
     <div class="wrapper">
         <nav class="main-nav" id="barraNav">
             <ul class="logo">
@@ -42,6 +41,7 @@
             </form>
         </div>
     </div>
+    
 </body>  
 </html>
 
