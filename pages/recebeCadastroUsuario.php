@@ -1,6 +1,6 @@
 <?php
     // params: ip/localhost, user, password, database
-    $conn = mysqli_connect("localhost", "root", "NOME_DB"); 
+    $conn = mysqli_connect("localhost", "root", "EMPRESTIMOS"); 
 
     if ($conn == FALSE) {
         echo "Erro ao conectar no MySQL!";
@@ -13,7 +13,7 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
    
-    $sql = "INSERT INTO NOME_DB (nome, cpf, login, email, senha) 
+    $sql = "INSERT INTO EMPRESTIMOS.USUARIO (nome, cpf, login, email, senha) 
             VALUES ('$nome', '$cpf', '$login', '$email', '$senha')";
 
     $res = mysqli_query($conn, $sql);

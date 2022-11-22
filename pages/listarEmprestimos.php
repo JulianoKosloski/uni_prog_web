@@ -30,6 +30,7 @@
             <form action="#" method="post" name="formulario">
                 <h3>Meus empréstimos</h3>
                 <p>Itens emprestados por mim:</p>
+                <!--$GET puxar dados da base-->
                 <p>Data devolução: </p>
                 <p>Itens que peguei emprestado:</p>
                 <p>Data devolução: </p>

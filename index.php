@@ -20,8 +20,8 @@
             </ul>
             <ul class="nav-items">
                 <li><a href="pages/home.php">Home</a></li>
-                <li><a href="pages/alterarCadastro.html">Alterar cadastro</a></li>
-                <li><a href="pages/listarEmprestimos.html">Meus empréstimos</a></li>
+                <li><a href="pages/alterarCadastro.php">Alterar cadastro</a></li>
+                <li><a href="pages/listarEmprestimos.php">Meus empréstimos</a></li>
                 <li><a href="index.php">Login</a></li>
             </ul>
         </nav>
