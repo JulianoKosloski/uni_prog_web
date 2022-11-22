@@ -36,6 +36,7 @@
     --clr-russian-violet: #0e103dff;
 
     --clr-sonic-silver-light: rgb(235, 236, 243);
+    --clr-sonic-silver-extralight: rgba(235, 236, 243, 0.438);
     --clr-dutch-white-faded: rgba(232, 218, 178, 0.589);
     --clr-white: white;
 }
@@ -156,18 +157,23 @@ a:hover {
 .box-container {
     border-radius: 10px;
     margin: 2rem 0 0 0;
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
+    background-color: var(--clr-sonic-silver-extralight);
 }
 
 .home-content {
     border-radius: 10px;
     width: 500px;
+    margin: 2rem 0 0 0;
     text-align: center;
+    padding: 3rem;
+    background-color: var(--clr-sonic-silver-extralight);
 }
 
 .main-btn, .main-btn:visited {
     border-radius: 10px;
+    margin: 1rem 0 0 0;
     padding: 0.5rem;
     background-color: var(--clr-dutch-white);
     color: var(--clr-russian-violet);
@@ -186,6 +192,29 @@ a:hover {
     transform: scale(1.1);
 }
 
+.input-btn {
+    all: unset;
+    border-radius: 10px;
+    width: 390px;
+    box-shadow: 0 0 0 transparent;
+    outline: 0;
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+    background-color: var(--clr-dutch-white);
+    color: var(--clr-russian-violet);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-regular);
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.input-btn:hover {
+    cursor: pointer;
+    background-color: var(--clr-russian-violet);
+    color: var(--clr-dutch-white);
+    transform: scale(1.1);
+}
 
 
 /* CHECK THIS OUT FOR BUTTOMS https://css-tricks.com/overriding-default-button-styles/ */
