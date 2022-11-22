@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresta já! - Emprestar</title>
+    <title>Empresta já! - Empréstimos</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="images/favicon.ico" alt="ícone do site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,27 +27,20 @@
         </nav>
         
         <div class="box-container" id="formulario">
+
             <form action="#" method="post" name="formulario">
-                <h3>Pegue um item emprestado!</h3>
-                <p>Itens disponíveis:</p>
-        
-                <p>Data devolução: <input type=“date” name="datadev" placeholder="dd/mm/aa"> </p>
-        
-                <input  class="input-btn" type="submit" value="Pegar emprestado">
+                <h3>Meus empréstimos</h3>
+                <p>Itens emprestados por mim:</p>
+                <p>Data devolução: </p>
+                <p>Itens que peguei emprestado:</p>
+                <p>Data devolução: </p>
         
                 <a  class="main-btn" href="../index.html">Voltar</a>
+        
             </form>
         </div>
 
     </div>
-
-<!------------------------------Footer----------------------------------> 
-   
-<footer>
-  
-<!--------------------inserir footer aqui---------------------->
-  
-</footer>
    
    
 </body>

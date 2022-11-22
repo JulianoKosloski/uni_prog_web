@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresta já! - Emprestar</title>
+    <title>Empresta já! - Cadastrar item</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="images/favicon.ico" alt="ícone do site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,28 +27,26 @@
         </nav>
         
         <div class="box-container" id="formulario">
-            <form action="#" method="post" name="formulario">
-                <h3>Pegue um item emprestado!</h3>
-                <p>Itens disponíveis:</p>
-        
-                <p>Data devolução: <input type=“date” name="datadev" placeholder="dd/mm/aa"> </p>
-        
-                <input  class="input-btn" type="submit" value="Pegar emprestado">
-        
-                <a  class="main-btn" href="../index.html">Voltar</a>
+
+            <form action="recebeCadastroItem.php" method="post" name="formulario">
+            <h3>Cadastre seus itens em nosso banco de dados:
+            </h3>
+            <p>Item:
+            <input  type="text" name="item" placeholder="Digite o nome do item">
+            </p>
+            <p>Descrição:</p>
+            <p>
+             <textarea cols="25" rows="10"></textarea>
+            </p>
+            
+            <input class="input-btn" type="submit" value="Cadastrar">
+            
+            <a class="main-btn" href="../index.html">Voltar</a>
+            
             </form>
         </div>
 
     </div>
-
-<!------------------------------Footer----------------------------------> 
-   
-<footer>
-  
-<!--------------------inserir footer aqui---------------------->
-  
-</footer>
-   
    
 </body>
 

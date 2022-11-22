@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresta já! - Emprestar</title>
+    <title>Empresta já! - Alterar cadastro</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="images/favicon.ico" alt="ícone do site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,28 +27,43 @@
         </nav>
         
         <div class="box-container" id="formulario">
-            <form action="#" method="post" name="formulario">
-                <h3>Pegue um item emprestado!</h3>
-                <p>Itens disponíveis:</p>
+
+            <form action="recebeAlteracaoCadastro.php" method="post" name="formulario_cadastro">
+                <h3>Edite seu cadastro:</h3>
         
-                <p>Data devolução: <input type=“date” name="datadev" placeholder="dd/mm/aa"> </p>
+                <p>Nome Atual:</p>
+                <p>Informe seu novo nome:
+                <input  type="text" name="newnome" placeholder="Digite seu novo nome">
+                </p>
+                <p>CPF Atual:</p>
+                <p>Informe novo CPF:
+                <input  type="text" name="newcpf" placeholder="Digite outro CPF">
+                </p>
+                <p>Login Atual:</p>
+                <p>Informe seu novo login:
+                <input  type="text" name="newlogin" placeholder="Digite seu novo Login">
+                </p>
+                <p>Email Atual:</p>
+                <p>Informe seu novo email:
+                <input type="email" name="newemail" placeholder="Digite seu novo e-mail">
+                </p>
+                <p>Informe sua senha atual: 
+                <input type="password" name="senha" placeholder="Digite sua senha atual">
+                </p>
+                <p>Informe sua nova senha : 
+                <input type="password" name="newsenha" placeholder="Digite sua nova senha">
+                </p>
+                <p>Confirme sua nova senha : 
+                <input type="password" name="newsenha1" placeholder="Confirme sua nova senha">
+                </p>
         
-                <input  class="input-btn" type="submit" value="Pegar emprestado">
+                <input  class="input-btn" type="submit" value="Alterar"> 
         
                 <a  class="main-btn" href="../index.html">Voltar</a>
             </form>
         </div>
 
     </div>
-
-<!------------------------------Footer----------------------------------> 
-   
-<footer>
-  
-<!--------------------inserir footer aqui---------------------->
-  
-</footer>
-   
    
 </body>
 

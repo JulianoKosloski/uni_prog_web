@@ -27,7 +27,7 @@
         </nav>
         
         <div class="box-container" id="formulario">
-            <form action="#" method="post" name="formulario">
+            <form action="recebeEmprestimoItem.php" method="post" name="formulario">
                 <h3>Pegue um item emprestado!</h3>
                 <p>Itens disponíveis:</p>
         
@@ -40,14 +40,6 @@
         </div>
 
     </div>
-
-<!------------------------------Footer----------------------------------> 
-   
-<footer>
-  
-<!--------------------inserir footer aqui---------------------->
-  
-</footer>
    
    
 </body>

@@ -29,7 +29,7 @@
         
         <div class="box-container" id="formulario">
 
-            <form action="#" method="post" name="formulario">
+            <form action="pages/recebeLogin.php" method="post" name="formulario">
             <h3>Faça seu login para emprestar e cadastrar itens:</h3>
             <p>Login:
             <input  type="text" name="login" placeholder="Digite seu Login"></p>
