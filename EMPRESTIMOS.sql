@@ -31,7 +31,6 @@ CREATE TABLE emprestimos.usu_item(
 	FOREIGN KEY (id_usuario) REFERENCES emprestimos.usuario(id_usuario)
 );
 
-
 INSERT INTO emprestimos.usuario VALUES
 	(1, "Joao",34600000143,"fuluno1@gmail.com", "login1",1234 ),
     (2, "Pedro",12000007680,"fuluno2@gmail.com", "login2",12345 ),

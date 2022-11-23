@@ -13,18 +13,6 @@
   
 <body> 
     <div class="wrapper">
-        <nav class="main-nav" id="barraNav">
-            <ul class="logo">
-                <li><a href="pages/home.php"><img id="logo-box" src="images/favicon.ico"></a></li>
-                <li id="logo-title">Empresta já!</li>
-            </ul>
-            <ul class="nav-items">
-                <li><a href="pages/home.php">Home</a></li>
-                <li><a href="pages/alterarCadastro.php">Alterar cadastro</a></li>
-                <li><a href="pages/listarEmprestimos.php">Meus empréstimos</a></li>
-                <li><a href="index.php">Login</a></li>
-            </ul>
-        </nav>
         
         <div class="box-container" id="formulario">
 
