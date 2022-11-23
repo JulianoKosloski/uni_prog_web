@@ -28,7 +28,6 @@ include 'head.php';
    
 </body>
 
-<!------------------------inserir scripts aqui----------------------->
 <script></script>
   
 </html>
