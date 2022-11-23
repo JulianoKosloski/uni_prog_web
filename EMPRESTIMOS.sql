@@ -1,48 +1,48 @@
-DROP DATABASE IF EXISTS EMPRESTIMOS;
-CREATE DATABASE EMPRESTIMOS;
-USE EMPRESTIMOS;
+DROP DATABASE IF EXISTS emprestimos;
+CREATE DATABASE emprestimos;
+USE emprestimos;
 
-CREATE TABLE EMPRESTIMOS.USUARIO(
-	ID_USUARIO INT NOT NULL,
-    NOME_USUARIO VARCHAR (45) NOT NULL,
-    CPF_USUARIO INT (11) NOT NULL,
-	EMAIL_USUARIO VARCHAR (45) NOT NULL,
-    LOGIN_USUARIO VARCHAR (45) NOT NULL,
-    SENHA_USUARIO VARCHAR (45) NOT NULL,
-    PRIMARY KEY (ID_USUARIO)
+CREATE TABLE emprestimos.usuario(
+	id_usuario int NOT NULL,
+    nome_usuario varchar (45) NOT NULL,
+    cpf_usuario int (11) NOT NULL,
+	email_usuario varchar (45) NOT NULL,
+    login_usuario varchar (45) NOT NULL,
+    senha_usuario varchar (45) NOT NULL,
+    PRIMARY KEY (id_usuario)
 );
 
-CREATE TABLE EMPRESTIMOS.ITEM(
-	ID_ITEM INT NOT NULL,
-    ID_DONO INT NOT NULL,
-    NOME_ITEM VARCHAR (45) NOT NULL,
-    DESCRICAO_ITEM VARCHAR (45) NOT NULL,
-    CATEGORIA_ITEM VARCHAR (45) NOT NULL,
-    PRIMARY KEY (ID_ITEM),
-	FOREIGN KEY (ID_DONO) REFERENCES EMPRESTIMOS.USUARIO(ID_USUARIO)
+CREATE TABLE emprestimos.item(
+	id_item int NOT NULL,
+    id_dono int NOT NULL,
+    nome_item varchar (45) NOT NULL,
+    descricao_item varchar (45) NOT NULL,
+    categoria_item varchar (45) NOT NULL,
+    PRIMARY KEY (id_item),
+	FOREIGN KEY (id_dono) REFERENCES emprestimos.usuario(id_usuario)
 );
 
-CREATE TABLE EMPRESTIMOS.USU_ITEM(
-	ID_ITEM INT,
-    ID_USUARIO INT,
-   
-    PRIMARY KEY (ID_ITEM, ID_USUARIO),
-    FOREIGN KEY (ID_ITEM) REFERENCES EMPRESTIMOS.ITEM(ID_ITEM),
-	FOREIGN KEY (ID_USUARIO) REFERENCES EMPRESTIMOS.USUARIO(ID_USUARIO)
+CREATE TABLE emprestimos.usu_item(
+	id_item int NOT NULL,
+    id_usuario int NOT NULL,
+    datadev datetime NOT NULL,
+    PRIMARY KEY (id_item, id_usuario),
+    FOREIGN KEY (id_item) REFERENCES emprestimos.item(id_item),
+	FOREIGN KEY (id_usuario) REFERENCES emprestimos.usuario(id_usuario)
 );
 
 
-INSERT INTO EMPRESTIMOS.USUARIO VALUES
-	(1, "Joao",00000000000,"fuluno1@gmail.com", "login1",1234 ),
-    (2, "pedro",00000000000,"fuluno2@gmail.com", "login2",12345 ),
-    (3, "maria",00000000000,"fuluna@gmail.com", "login3",123456 );
+INSERT INTO emprestimos.usuario VALUES
+	(1, "Joao",34600000143,"fuluno1@gmail.com", "login1",1234 ),
+    (2, "Pedro",12000007680,"fuluno2@gmail.com", "login2",12345 ),
+    (3, "Maria",28800000766,"fuluna@hotmail.com", "login3",123456 );
     
-INSERT INTO EMPRESTIMOS.ITEM VALUES
-	(1,1, "caneta","caneta preta", "objeto"),
+INSERT INTO emprestimos.item VALUES
+	(1,1, "caneta","caneta preta", "objetos"),
     (2,2, "celular","celular motorola", "eletronicos"),
     (3,3, "camiseta","camiseta branca", "roupas");
 
-INSERT INTO EMPRESTIMOS.USU_ITEM VALUES
-	(1,2),
-    (2,3), 
-    (3,1); 
+INSERT INTO emprestimos.usu_item VALUES
+	(1,2, "24/12/2022"),
+    (2,3, "30/12/2022"), 
+    (3,1, "08/01/2023"); 
