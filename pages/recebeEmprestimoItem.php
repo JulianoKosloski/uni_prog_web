@@ -1,6 +1,7 @@
 <?php
+require 'connDB.php';
 
-    echo "data devolucao:" . $_POST['datadev'] . "<br>";
+$datadev = $_POST['datadev'];
     
 
 

@@ -1,7 +1,7 @@
 <?php
-
-    echo "item:" . $_POST['item'] . "<br>";
-    echo "descricao:" . $_POST['descricao'] . "<br>";
+require 'connDB.php';
+$item = $_POST['item'];
+$descricao:" . $_POST['descricao'] . "<br>";
 
 
 
