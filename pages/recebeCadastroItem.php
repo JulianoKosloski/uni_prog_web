@@ -1,8 +1,10 @@
 <?php
 require 'connDB.php';
+
 $item = $_POST['item'];
-$descricao:" . $_POST['descricao'] . "<br>";
+$descricao = $_POST['descricao'] . "<br>";
 
-
+// Thales: query
+// $sql = "";
 
 ?>
