@@ -1,24 +1,32 @@
 <?php
 require 'connDB.php';
 
-// #TODO Felipe: login, authentication (comparar login/senha com database), organizar paginas (iniciar com login e só permitir
-// que um usuario logado veja  o website), armazenar info de login usando session ou cookies
 
-$login = $_POST['login'];
-$senha = $_POST['senha'];
 
-// query $sql
-// redirecionar usuario para home ou indicar que os dados informados são invalidos
+	$login = $_POST['login'];
+	$senha = $_POST['senha'];
 
-// use esse padrao de resposta se for util
-$res = mysqli_query($conn, $sql);
+	$sql= " SELECT * FROM USUARIO WHERE LOGIN_USUARIO = '$login' AND SENHA_USUARIO = '$senha'";
+	
 
-if($res) {
-    header("Location: outraPagina.php"); 
-    // ver como mostrar mensagem de confirmação na página ao invés de redirecionar o usuário
-    // professor criou uma tabela que mostrar os usuarios cadastrados
-} else {
-    echo "Erro ao inserir dados";
-}
+	$res = mysqli_query($conn, $sql);
+	
+	$qtdeRegistros = mysqli_num_rows($res);
+	
+	if($qtdeRegistros > 0 ){
+	
+		session_start();
+		$row = mysqli_fetch_assoc($res);
+		
+		$_SESSION['ID_USUARIO'] = $row['ID_USUARIO'];
+		$_SESSION['NOME_USUARIO'] = $row['NOME_USUARIO'];
+		header("Location: home.php");
+	
+	}
+	else{
+		header("Location: index.php?erro=1");
+	}
+
+
 
 ?>
