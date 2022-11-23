@@ -13,7 +13,7 @@ include 'head.php';
                 <h3>Pegue um item emprestado!</h3>
                 <p>Itens disponíveis:</p>
         
-                <p>Data devolução: <input type=“date” name="datadev" placeholder="dd/mm/aa"> </p>
+                <p>Data devolução: <input type="date" name="datadev" placeholder="dd/mm/aa"> </p>
         
                 <input  class="input-btn" type="submit" value="Pegar emprestado">
         
