@@ -1,7 +1,3 @@
-<?php 
-    include 'pages/autentica.php';
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

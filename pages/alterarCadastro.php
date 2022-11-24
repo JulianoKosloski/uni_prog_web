@@ -1,5 +1,6 @@
 <?php 
-include 'head.php';
+require 'autentica.php';
+require 'head.php';
 ?>
 
 <body>
@@ -42,7 +43,7 @@ include 'head.php';
         
                 <input  class="input-btn" type="submit" value="Alterar"> 
         
-                <a  class="main-btn" href="../index.html">Voltar</a>
+                <a  class="main-btn" href="../index.php">Voltar</a>
             </form>
         </div>
 

@@ -1,5 +1,6 @@
 <?php 
-include 'head.php';
+require 'autentica.php';
+require 'head.php';
 ?>
 
 <body>
@@ -18,7 +19,7 @@ include 'head.php';
                 <p>Itens que peguei emprestado:</p>
                 <p>Data devolução: </p>
         
-                <a  class="main-btn" href="../index.html">Voltar</a>
+                <a  class="main-btn" href="../index.php">Voltar</a>
         
             </form>
         </div>

@@ -7,6 +7,6 @@
         <li><a href="home.php">Home</a></li>
         <li><a href="alterarCadastro.php">Alterar cadastro</a></li>
         <li><a href="listarEmprestimos.php">Meus empréstimos</a></li>
-        <li><a href="../login.php">Login</a></li>
+        <li><a href="sair.php">Sair</a></li>
     </ul>
 </nav>

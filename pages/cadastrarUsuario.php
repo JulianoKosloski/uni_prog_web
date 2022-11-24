@@ -1,5 +1,6 @@
 <?php 
-include 'head.php';
+require 'autentica.php';
+require 'head.php';
 ?>
 
 <body>

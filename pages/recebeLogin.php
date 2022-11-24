@@ -25,6 +25,4 @@ else{
 	header("Location: index.php?erro=1");
 }
 
-
-
 ?>
