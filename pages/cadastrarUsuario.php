@@ -4,9 +4,6 @@ include 'head.php';
 
 <body>
   <div class="wrapper">
-    <?php 
-        include 'nav.php';
-    ?>
     
     <div class="box-container" id="formulario">
 
@@ -29,7 +26,7 @@ include 'head.php';
         </p>
       
         <input class="input-btn" type="submit" value="Cadastrar">
-        <a class="main-btn" href="login.html">Voltar</a>
+        <a class="main-btn" href="../index.php">Voltar</a>
       
         </form>
     </div>
