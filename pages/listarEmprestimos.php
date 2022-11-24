@@ -1,6 +1,7 @@
 <?php 
 require 'autentica.php';
 require 'head.php';
+require 'meusEmprestimos.php';
 ?>
 
 <body>
@@ -15,10 +16,14 @@ require 'head.php';
                     echo '<p class=message style="text-align:center;color:green"> Item emprestado com sucesso.</p>';
                 }
             ?>
-            <form action="meusEmprestimos.php" method="post" name="formulario">
+            <form action="#" method="post" name="formulario">
                 <h3>Meus empréstimos</h3>
                 <p>Itens emprestados por mim:</p>
-                <!--$GET puxar dados da base-->
+                <?php 
+
+                    //usar esse form para devolução de itens também
+                
+                ?>
                 <p>Data devolução: </p>
                 <p>Itens que peguei emprestado:</p>
                 <p>Data devolução: </p>

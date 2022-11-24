@@ -8,7 +8,7 @@ $descricao = $_POST['descricao'];
 $categoria = $_POST['categoria'];
 
 $sql = "INSERT INTO emprestimos.item (id_dono, nome_item, descricao_item, categoria_item) 
-        VALUES ($_SESSION['ID_USUARIO'], $item, $descricao, $categoria)";
+        VALUES ('$_SESSION['ID_USUARIO']', '$item', '$descricao', '$categoria')";
 
 $res = mysqli_query($conn, $sql);
 

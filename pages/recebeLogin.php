@@ -4,7 +4,7 @@ require 'connDB.php';
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 
-$sql= " SELECT * FROM USUARIO 
+$sql= " SELECT * FROM emprestimos.usuario 
 		WHERE login_usuario = '$login' AND senha_usuario = '$senha'";
 
 

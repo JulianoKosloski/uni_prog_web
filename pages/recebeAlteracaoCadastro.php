@@ -15,12 +15,12 @@ $newsenha1 = $_POST['newsenha1'];
 
 $sql = "UPDATE emprestimos.usuarios 
         SET 
-        nome_usuario = $newnome,
-        cpf_usuario = $newcpf,
-        login_usuario = $newlogin, 
-        email_usuario = $newemail,
-        senha_usuario = $newsenha,
-        WHERE id_usuario = $_SESSION['ID_USUARIO'] AND senha_usuario = '$senha'";
+        nome_usuario = '$newnome',
+        cpf_usuario = '$newcpf',
+        login_usuario = '$newlogin', 
+        email_usuario = '$newemail',
+        senha_usuario = '$newsenha',
+        WHERE id_usuario = '$_SESSION['ID_USUARIO']' AND senha_usuario = '$senha'";
 
 $res = mysqli_query($conn, $sql);
 
