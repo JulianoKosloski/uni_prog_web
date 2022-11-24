@@ -21,11 +21,15 @@
             <?php
                 //mensagens de erro
                 if(isset($_GET['autentica'])) {
-	                echo '<p style="text-align;center;color:red"> Você não tem permissão de acesso.</p>';
+	                echo '<p class=message style="text-align:center;color:red"> Você não tem permissão de acesso.</p>';
                 }
 	
                 if(isset($_GET['erro'])) {
-	                echo '<p> style="text-align;center;color:red"> Usuário e/ou senha incorreto(s).</p>';
+	                echo '<p class=message style="text-align:center;color:red"> Usuário e/ou senha incorreto(s).</p>';
+                }
+
+                if(isset($_GET['cadastro'])) {
+	                echo '<p class=message style="text-align:center;color:green"> Cadastro realizado com sucesso. Realize seu primeiro login.</p>';
                 }
 
             ?>

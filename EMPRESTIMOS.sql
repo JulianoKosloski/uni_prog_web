@@ -18,6 +18,7 @@ CREATE TABLE emprestimos.item(
     nome_item varchar (45) NOT NULL,
     descricao_item varchar (45) NOT NULL,
     categoria_item varchar (45) NOT NULL,
+    ultima_devolucao_item datetime,
     PRIMARY KEY (id_item),
 	FOREIGN KEY (id_dono) REFERENCES emprestimos.usuario(id_usuario)
 );
@@ -37,9 +38,9 @@ INSERT INTO emprestimos.usuario VALUES
     (3, "Maria",28800000766,"fuluna@hotmail.com", "login3",123456 );
     
 INSERT INTO emprestimos.item VALUES
-	(1,1, "caneta","caneta preta", "objetos"),
-    (2,2, "celular","celular motorola", "eletronicos"),
-    (3,3, "camiseta","camiseta branca", "roupas");
+	(1,1, "caneta","caneta preta", "objetos", "27/06/2022"),
+    (2,2, "celular","celular motorola", "eletronicos", NULL),
+    (3,3, "camiseta","camiseta branca", "roupas", "04/10/2019");
 
 INSERT INTO emprestimos.usu_item VALUES
 	(1,2, "24/12/2022"),

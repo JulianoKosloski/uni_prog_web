@@ -1,20 +1,19 @@
 <?php
 require 'connDB.php';
 
+session_start();
+
 $item = $_POST['item'];
-$descricao = $_POST['descricao'] . "<br>";
+$descricao = $_POST['descricao'];
+$categoria = $_POST['categoria'];
 
-// Thales: query
-// $sql = "";
+$sql = "INSERT INTO emprestimos.item (id_dono, nome_item, descricao_item, categoria_item) 
+        VALUES ($_SESSION['ID_USUARIO'], $item, $descricao, $categoria)";
 
-
-// use esse padrao de resposta se for util
 $res = mysqli_query($conn, $sql);
 
 if($res) {
-    header("Location: outraPagina.php"); 
-    // ver como mostrar mensagem de confirmação na página ao invés de redirecionar o usuário
-    // professor criou uma tabela que mostrar os usuarios cadastrados
+    header("Location: cadastrarItem.php?cadastro=1"); 
 } else {
     echo "Erro ao inserir dados";
 }

@@ -10,8 +10,12 @@ require 'head.php';
         ?>
         
         <div class="box-container" id="formulario">
-
-            <form action="#" method="post" name="formulario">
+            <?php 
+                if(isset($_GET['emp'])) {
+                    echo '<p class=message style="text-align:center;color:green"> Item emprestado com sucesso.</p>';
+                }
+            ?>
+            <form action="meusEmprestimos.php" method="post" name="formulario">
                 <h3>Meus empréstimos</h3>
                 <p>Itens emprestados por mim:</p>
                 <!--$GET puxar dados da base-->
