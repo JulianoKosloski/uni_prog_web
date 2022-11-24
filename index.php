@@ -17,6 +17,19 @@
         <div class="box-container" id="formulario">
 
             <form action="pages/recebeLogin.php" method="post" name="formulario">
+
+            <?php
+
+                if(isset($_GET['autentica'])) {
+	                echo '<p style="text-align;center;color:red"> Você não tem permissão de acesso.</p>';
+                }
+	
+                if(isset($_GET['erro'])) {
+	                echo '<p> style="text-align;center;color:red"> Usuário e/ou senha incorreto(s).</p>';
+                }
+
+            ?>
+            
             <h3>Faça seu login para emprestar e cadastrar itens:</h3>
             <p>Login:
             <input  type="text" name="login" placeholder="Digite seu Login"></p>
@@ -34,7 +47,3 @@
 </html>
 
 
-<?php
-
-
-?>
