@@ -1,2 +1,2 @@
 # uni_prog_web
-Repository for Web Developing studies
+Website made with PHP, MySQL, HTML and CSS for a university web development course
