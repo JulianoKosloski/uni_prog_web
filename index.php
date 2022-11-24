@@ -19,7 +19,7 @@
             <form action="pages/recebeLogin.php" method="post" name="formulario">
 
             <?php
-
+                //mensagens de erro
                 if(isset($_GET['autentica'])) {
 	                echo '<p style="text-align;center;color:red"> Você não tem permissão de acesso.</p>';
                 }

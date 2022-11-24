@@ -1,6 +1,7 @@
 <?php 
 require 'autentica.php';
 require 'head.php';
+require 'dadosUsuario.php';
 ?>
 
 <body>
@@ -14,20 +15,25 @@ require 'head.php';
 
             <form action="recebeAlteracaoCadastro.php" method="post" name="formulario_cadastro">
                 <h3>Edite seu cadastro:</h3>
-        
-                <p>Nome Atual:</p>
+                <?php 
+                    if(isset($_GET['alterado'])) {
+                        echo '<p style="text-align;center;color:red"> Dados alterados com sucesso.</p>';
+                    }
+                ?>
+
+                <p>Nome Atual: <?php echo $nome;?></p>
                 <p>Informe seu novo nome:
                 <input  type="text" name="newnome" placeholder="Digite seu novo nome">
                 </p>
-                <p>CPF Atual:</p>
+                <p>CPF Atual: <?php echo $cpf;?></p>
                 <p>Informe novo CPF:
                 <input  type="text" name="newcpf" placeholder="Digite outro CPF">
                 </p>
-                <p>Login Atual:</p>
+                <p>Login Atual: <?php echo $login;?></p>
                 <p>Informe seu novo login:
                 <input  type="text" name="newlogin" placeholder="Digite seu novo Login">
                 </p>
-                <p>Email Atual:</p>
+                <p>Email Atual: <?php echo $email;?></p>
                 <p>Informe seu novo email:
                 <input type="email" name="newemail" placeholder="Digite seu novo e-mail">
                 </p>
