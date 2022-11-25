@@ -3,7 +3,7 @@ CREATE DATABASE emprestimos;
 USE emprestimos;
 
 CREATE TABLE emprestimos.usuario(
-	id_usuario int NOT NULL,
+	id_usuario int NOT NULL AUTO_INCREMENT,
     nome_usuario varchar (45) NOT NULL,
     cpf_usuario int (11) NOT NULL,
 	email_usuario varchar (45) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE emprestimos.usuario(
 );
 
 CREATE TABLE emprestimos.item(
-	id_item int NOT NULL,
+	id_item int NOT NULL AUTO_INCREMENT,
     id_dono int NOT NULL,
     nome_item varchar (45) NOT NULL,
     descricao_item varchar (45) NOT NULL,

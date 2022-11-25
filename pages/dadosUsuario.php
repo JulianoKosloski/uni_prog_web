@@ -2,10 +2,16 @@
 
 require 'connDB.php';
 
-session_start();
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 
-$sql= "SELECT * FROM emprestimos.usuario WHERE id_usuario = '$_SESSION['ID_USUARIO']'";
+$id = $_SESSION['ID_USUARIO'];
 
+$sql= "SELECT * FROM emprestimos.usuario WHERE id_usuario = '$id'";
+
+$res = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($res);
 
 $nome = $row['nome_usuario'];

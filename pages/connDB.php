@@ -1,6 +1,6 @@
 <?php 
 // params: ip/localhost, user, password, database
-$conn = mysqli_connect("localhost", "root", "EMPRESTIMOS"); 
+$conn = mysqli_connect("localhost", "root","", "EMPRESTIMOS"); 
 
 if ($conn == FALSE) {
     echo "Erro ao conectar no MySQL!";

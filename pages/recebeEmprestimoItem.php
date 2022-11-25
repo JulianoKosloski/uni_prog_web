@@ -1,17 +1,20 @@
 <?php
 require 'connDB.php';
 
-session_start();
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 
 $item = $_POST['item'];
 $datadev = $_POST['datadev'];
 
-
+$id = $_SESSION['ID_USUARIO'];
 
 $sql = "INSERT INTO emprestimos.usu_item (id_item, id_usuario, datadev) 
         VALUES (
-            SELECT id_item FROM emprestimos.item WHERE nome_item = '$item',
-            ,'$_SESSION['ID_USUARIO']',
+            (SELECT id_item FROM emprestimos.item WHERE nome_item = '$item'),
+            '$id',
             '$datadev')";
 
 $res = mysqli_query($conn, $sql);

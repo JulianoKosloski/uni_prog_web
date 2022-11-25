@@ -1,5 +1,5 @@
 <?php 
-require 'autentica.php';
+// require 'autentica.php';
 require 'head.php';
 ?>
 
@@ -12,7 +12,12 @@ require 'head.php';
         <div class="home-content" id="formulario">
             <h3>Home</h3>
             <p>Bem vindo(a) 
-                <?php echo $_SESSION['NOME_USUARIO']."!";
+                <?php 
+                if(!isset($_SESSION)) 
+                { 
+                    session_start(); 
+                }
+                echo $_SESSION['NOME_USUARIO']."!";
                 ?>
             </p>
             <a  class="main-btn" href="cadastrarItem.php">Cadastrar novo item</a>

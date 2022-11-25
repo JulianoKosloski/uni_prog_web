@@ -17,7 +17,7 @@ require 'dadosUsuario.php';
                 <h3>Edite seu cadastro:</h3>
                 <?php 
                     if(isset($_GET['alterado'])) {
-                        echo '<p class=message style="text-align:center;color:red"> Dados alterados com sucesso.</p>';
+                        echo '<p class=message style="text-align:center;color:green"> Dados alterados com sucesso.</p>';
                     }
                 ?>
 

@@ -1,7 +1,10 @@
 <?php
-	session_start();
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 	
-	if(!isset($SESSION['ID_USUARIO'])){
+	if(!isset($_SESSION['ID_USUARIO'])){
 		
 		header("Location: ../index.php?autentica=1"); 
 	}

@@ -1,7 +1,10 @@
 <?php
 require 'connDB.php';
 
-session_start();
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 
 $item = $_POST['item'];
 $descricao = $_POST['descricao'];

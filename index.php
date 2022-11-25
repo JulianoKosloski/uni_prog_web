@@ -13,16 +13,12 @@
   
 <body> 
     <div class="wrapper">
-        
         <div class="box-container" id="formulario">
 
             <form action="pages/recebeLogin.php" method="post" name="formulario">
 
             <?php
                 //mensagens de erro
-                if(isset($_GET['autentica'])) {
-	                echo '<p class=message style="text-align:center;color:red"> Você não tem permissão de acesso.</p>';
-                }
 	
                 if(isset($_GET['erro'])) {
 	                echo '<p class=message style="text-align:center;color:red"> Usuário e/ou senha incorreto(s).</p>';

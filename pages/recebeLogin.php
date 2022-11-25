@@ -14,7 +14,10 @@ $qtdeRegistros = mysqli_num_rows($res);
 
 if($qtdeRegistros > 0 ){ //se há um registro, o usuário está autorizado
 
-	session_start();
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 	$row = mysqli_fetch_assoc($res);
 	
 	$_SESSION['ID_USUARIO'] = $row['id_usuario'];

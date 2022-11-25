@@ -1,5 +1,4 @@
 <?php 
-require 'autentica.php';
 require 'head.php';
 ?>
 

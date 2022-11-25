@@ -14,7 +14,7 @@ require 'head.php';
                 <h3>Pegue um item emprestado!</h3>
                 <p>Itens disponíveis:
                     <?php 
-                    // TODO trazer itens disponiveis em uma tabela filtrando quais foram emprestados com um join
+                        require 'listaItens.php';
                     ?>
 
                 </p>
