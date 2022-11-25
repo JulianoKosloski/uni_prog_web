@@ -1,7 +1,6 @@
 <?php 
 require 'autentica.php';
 require 'head.php';
-require 'meusEmprestimos.php';
 ?>
 
 <body>
@@ -18,15 +17,12 @@ require 'meusEmprestimos.php';
             ?>
             <form action="#" method="post" name="formulario">
                 <h3>Meus empréstimos</h3>
-                <p>Itens emprestados por mim:</p>
+                <p>Itens que peguei emprestado:</p>
                 <?php 
 
-                    //usar esse form para devolução de itens também
+                    require 'meusEmprestimos.php';
                 
                 ?>
-                <p>Data devolução: </p>
-                <p>Itens que peguei emprestado:</p>
-                <p>Data devolução: </p>
         
                 <a  class="main-btn" href="../index.php">Voltar</a>
         
