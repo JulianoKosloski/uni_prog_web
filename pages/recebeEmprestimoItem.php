@@ -11,11 +11,11 @@ $datadev = $_POST['datadev'];
 
 $id = $_SESSION['ID_USUARIO'];
 
-$sql = "INSERT INTO emprestimos.usu_item (id_item, id_usuario, datadev) 
+$sql = "INSERT INTO emprestimos.usu_item (id_item, id_usuario, datadev, nome_item) 
         VALUES (
             (SELECT id_item FROM emprestimos.item WHERE nome_item = '$item'),
             '$id',
-            '$datadev')";
+            '$datadev','$item')";
 
 $res = mysqli_query($conn, $sql);
 

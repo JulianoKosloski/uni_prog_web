@@ -23,7 +23,7 @@ require 'head.php';
         
                 <input  class="input-btn" type="submit" value="Pegar emprestado">
         
-                <a  class="main-btn" href="../index.php">Voltar</a>
+            
             </form>
         </div>
 

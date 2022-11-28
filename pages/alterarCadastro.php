@@ -27,7 +27,7 @@ require 'dadosUsuario.php';
                 </p>
                 <p>CPF Atual: <?php echo $cpf;?></p>
                 <p>Informe novo CPF:
-                <input  type="text" name="newcpf" placeholder="Digite outro CPF">
+                <input  type="number" name="newcpf" placeholder="Digite outro CPF">
                 </p>
                 <p>Login Atual: <?php echo $login;?></p>
                 <p>Informe seu novo login:
@@ -49,7 +49,7 @@ require 'dadosUsuario.php';
         
                 <input  class="input-btn" type="submit" value="Alterar"> 
         
-                <a  class="main-btn" href="../index.php">Voltar</a>
+                
             </form>
         </div>
 

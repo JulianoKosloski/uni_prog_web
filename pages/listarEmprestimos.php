@@ -15,7 +15,10 @@ require 'head.php';
                     echo '<p class=message style="text-align:center;color:green"> Item emprestado com sucesso.</p>';
                 }
             ?>
-            <form action="#" method="post" name="formulario">
+
+
+
+            <form action="deletaEmprestimo.php" method="post" name="formulario">
                 <h3>Meus empréstimos</h3>
                 <p>Itens que peguei emprestado:</p>
                 <?php 
@@ -23,8 +26,11 @@ require 'head.php';
                     require 'meusEmprestimos.php';
                 
                 ?>
-        
-                <a  class="main-btn" href="../index.php">Voltar</a>
+                <h3> Devoluções</h3>
+               <p>Item: <input type="text" name="item" placeholder="Digite o nome do item"> </p>
+               
+               <input  class="input-btn" type="submit" value="Devolver">
+                
         
             </form>
         </div>

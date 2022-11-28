@@ -9,9 +9,10 @@ if(!isset($_SESSION))
 $item = $_POST['item'];
 $descricao = $_POST['descricao'];
 $categoria = $_POST['categoria'];
+$id = $_SESSION['ID_USUARIO'];
 
 $sql = "INSERT INTO emprestimos.item (id_dono, nome_item, descricao_item, categoria_item) 
-        VALUES ('$_SESSION['ID_USUARIO']', '$item', '$descricao', '$categoria')";
+        VALUES ('$id', '$item', '$descricao', '$categoria')";
 
 $res = mysqli_query($conn, $sql);
 
