@@ -12,7 +12,7 @@ $id = $_SESSION['ID_USUARIO'];
 $atual= date("Y-m-d");
 $item = $_POST['item'];
 
-//$nomeDono = $_POST['dono'];
+
 
 
 
