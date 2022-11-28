@@ -1,5 +1,5 @@
 <?php 
-// require 'autentica.php';
+require 'autentica.php';
 require 'head.php';
 ?>
 
@@ -13,10 +13,7 @@ require 'head.php';
             <h3>Home</h3>
             <p>Bem vindo(a) 
                 <?php 
-                if(!isset($_SESSION)) 
-                { 
-                    session_start(); 
-                }
+               
                 echo $_SESSION['NOME_USUARIO']."!";
                 ?>
             </p>

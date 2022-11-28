@@ -31,7 +31,7 @@ require 'head.php';
             
             <input class="input-btn" type="submit" value="Cadastrar">
             
-            <a class="main-btn" href="../index.php">Voltar</a>
+            
             
             </form>
         </div>
